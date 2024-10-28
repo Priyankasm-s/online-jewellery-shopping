@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+  <div class="signup-form">
+    <h1>Login to Jewell</h1>
+<form id="signup-form" onsubmit="return handleSubmit(event) " >
+  <input type="Name" class="input-box" placeholder="User Name">
+  <input type="Email" class="input-box" placeholder="Your Email">
+  <input type="Password" class="input-box" placeholder="Your Password">
+  <input type="Sumbit" value="Sign up" onclick="window.location.href='index.html';">
+</form>
+  </div>
+  <script>
+    function handleSubmit(event) {
+        event.preventDefault(); 
+        
+        alert("Signup successful! Welcome to our jewellery shop.");
+        document.getElementById("signupForm").reset();
+        return false; 
+    }
+</script>
+  
+</body>
+</html>
